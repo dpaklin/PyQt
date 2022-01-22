@@ -1,0 +1,263 @@
+2022-01-13 12:03:06,049 DEBUG client.py Была вызвана функция arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции arg_parser().Вызов из функции <module>
+2022-01-13 12:03:06,064 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-01-13 12:03:06,080 DEBUG client.py Была вызвана функция arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции arg_parser().Вызов из функции <module>
+2022-01-13 12:03:06,096 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-01-13 12:03:06,174 INFO transport.py Попытка подключения №1
+2022-01-13 12:03:06,190 DEBUG transport.py Установлено соединение с сервером
+2022-01-13 12:03:06,190 DEBUG transport.py Сформировано presence сообщение для пользователя test1
+2022-01-13 12:03:06,190 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=960, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58462), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1642064586.1900058, 'user': {'account_name': 'test1'}}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции connection_init
+2022-01-13 12:03:06,190 INFO transport.py Попытка подключения №1
+2022-01-13 12:03:06,205 DEBUG transport.py Установлено соединение с сервером
+2022-01-13 12:03:06,205 DEBUG transport.py Сформировано presence сообщение для пользователя test2
+2022-01-13 12:03:06,205 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=940, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58463), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1642064586.2056315, 'user': {'account_name': 'test2'}}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции connection_init
+2022-01-13 12:03:06,252 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=960, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58462), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции connection_init
+2022-01-13 12:03:06,252 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-13 12:03:06,252 INFO transport.py Соединение с сервером успешно установлено.
+2022-01-13 12:03:06,252 DEBUG transport.py Запрос списка известных пользователей test1
+2022-01-13 12:03:06,252 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=960, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58462), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1642064586.2525089, 'account_name': 'test1'}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции user_list_update
+2022-01-13 12:03:06,283 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=940, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58463), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции connection_init
+2022-01-13 12:03:06,283 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-13 12:03:06,299 INFO transport.py Соединение с сервером успешно установлено.
+2022-01-13 12:03:06,299 DEBUG transport.py Запрос списка известных пользователей test2
+2022-01-13 12:03:06,299 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=940, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58463), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1642064586.299379, 'account_name': 'test2'}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции user_list_update
+2022-01-13 12:03:06,799 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=960, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58462), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции user_list_update
+2022-01-13 12:03:06,814 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=940, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58463), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции user_list_update
+2022-01-13 12:03:06,830 DEBUG transport.py Запрос контакт листа для пользователся Thread-1
+2022-01-13 12:03:06,830 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1642064586.8306363, 'user': 'test1'}
+2022-01-13 12:03:06,830 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=960, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58462), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1642064586.8306363, 'user': 'test1'}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции contacts_list_update
+2022-01-13 12:03:06,830 DEBUG transport.py Запрос контакт листа для пользователся Thread-1
+2022-01-13 12:03:06,830 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1642064586.8306363, 'user': 'test2'}
+2022-01-13 12:03:06,846 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=940, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58463), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1642064586.8306363, 'user': 'test2'}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции contacts_list_update
+2022-01-13 12:03:07,315 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=960, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58462), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции contacts_list_update
+2022-01-13 12:03:07,315 DEBUG transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-01-13 12:03:07,330 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=940, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58463), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции contacts_list_update
+2022-01-13 12:03:07,330 DEBUG transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-01-13 12:03:07,315 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2022-01-13 12:03:07,330 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2022-01-13 12:03:57,452 DEBUG client.py Была вызвана функция arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции arg_parser().Вызов из функции <module>
+2022-01-13 12:04:01,921 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: 123
+2022-01-13 12:04:01,986 INFO transport.py Попытка подключения №1
+2022-01-13 12:04:01,986 DEBUG transport.py Установлено соединение с сервером
+2022-01-13 12:04:01,986 DEBUG transport.py Сформировано presence сообщение для пользователя 123
+2022-01-13 12:04:02,002 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=1280, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58471), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1642064641.9867096, 'user': {'account_name': '123'}}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции connection_init
+2022-01-13 12:04:02,517 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=1280, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58471), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции connection_init
+2022-01-13 12:04:02,517 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-13 12:04:02,517 INFO transport.py Соединение с сервером успешно установлено.
+2022-01-13 12:04:02,517 DEBUG transport.py Запрос списка известных пользователей 123
+2022-01-13 12:04:02,533 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=1280, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58471), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1642064642.5179753, 'account_name': '123'}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции user_list_update
+2022-01-13 12:04:03,033 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=1280, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58471), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции user_list_update
+2022-01-13 12:04:03,049 DEBUG transport.py Запрос контакт листа для пользователся Thread-1
+2022-01-13 12:04:03,049 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1642064643.0492136, 'user': '123'}
+2022-01-13 12:04:03,049 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=1280, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58471), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1642064643.0492136, 'user': '123'}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции contacts_list_update
+2022-01-13 12:04:03,533 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=1280, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58471), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции contacts_list_update
+2022-01-13 12:04:03,533 DEBUG transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-01-13 12:04:03,533 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2022-01-13 12:04:13,420 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=1280, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58471), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1642064653.4200191, 'account_name': '123'}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции transport.transport_shutdown().Вызов из функции transport_shutdown
+2022-01-13 12:04:13,420 DEBUG transport.py Транспорт завершает работу.
+2022-01-13 12:04:13,685 DEBUG transport.py Потеряно соединение с сервером.
+2022-01-13 12:04:27,059 DEBUG transport.py Запрос списка известных пользователей test1
+2022-01-13 12:04:27,062 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=960, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58462), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1642064667.0608244, 'account_name': 'test1'}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_app.exec_().Вызов из функции user_list_update
+2022-01-13 12:04:27,429 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=960, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58462), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_app.exec_().Вызов из функции user_list_update
+2022-01-13 12:04:27,446 DEBUG add_contact.py Обновление списка пользователей с сервера выполнено
+2022-01-13 12:04:27,756 DEBUG transport.py Создание контакта test2
+2022-01-13 12:04:28,010 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=960, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58462), raddr=('127.0.0.1', 7777)>, {'action': 'add', 'time': 1642064667.7568502, 'user': 'test1', 'account_name': 'test2'}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_app.exec_().Вызов из функции add_contact
+2022-01-13 12:04:28,469 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=960, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58462), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_app.exec_().Вызов из функции add_contact
+2022-01-13 12:04:28,469 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-13 12:04:28,513 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x0000023975C79510>
+2022-01-13 12:04:33,986 DEBUG transport.py Создание контакта test1
+2022-01-13 12:04:34,113 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=940, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58463), raddr=('127.0.0.1', 7777)>, {'action': 'add', 'time': 1642064673.9869673, 'user': 'test2', 'account_name': 'test1'}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_app.exec_().Вызов из функции add_contact
+2022-01-13 12:04:34,617 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=940, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58463), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_app.exec_().Вызов из функции add_contact
+2022-01-13 12:04:34,618 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-13 12:04:34,657 INFO main_window.py Успешно добавлен контакт <PyQt5.QtGui.QStandardItem object at 0x00000191231B09D0>
+2022-01-13 12:04:47,568 DEBUG transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1642064687.5684538, 'mess_text': 'rtyttyrtey'}
+2022-01-13 12:04:47,780 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=940, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58463), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1642064687.5684538, 'mess_text': 'rtyttyrtey'}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_app.exec_().Вызов из функции send_message
+2022-01-13 12:04:47,936 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=940, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58463), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_app.exec_().Вызов из функции send_message
+2022-01-13 12:04:47,936 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-13 12:04:47,937 INFO transport.py Отправлено сообщение для пользователя test1
+2022-01-13 12:04:47,955 DEBUG main_window.py Отправлено сообщение для test1: rtyttyrtey
+2022-01-13 12:04:48,778 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=960, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58462), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции self._bootstrap_inner().Вызов из функции run
+2022-01-13 12:04:48,778 DEBUG transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1642064687.5684538, 'mess_text': 'rtyttyrtey'}
+2022-01-13 12:04:48,778 DEBUG transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'test2', 'to': 'test1', 'time': 1642064687.5684538, 'mess_text': 'rtyttyrtey'}
+2022-01-13 12:04:48,778 DEBUG transport.py Получено сообщение от пользователя test2:rtyttyrtey
+2022-01-13 12:04:56,485 DEBUG transport.py Сформирован словарь сообщения: {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1642064696.485904, 'mess_text': 'fgfdsgsdfgdfg'}
+2022-01-13 12:04:56,487 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=960, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58462), raddr=('127.0.0.1', 7777)>, {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1642064696.485904, 'mess_text': 'fgfdsgsdfgdfg'}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_app.exec_().Вызов из функции send_message
+2022-01-13 12:04:56,573 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=960, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58462), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_app.exec_().Вызов из функции send_message
+2022-01-13 12:04:56,573 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-13 12:04:56,574 INFO transport.py Отправлено сообщение для пользователя test2
+2022-01-13 12:04:56,579 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=940, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58463), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции self._bootstrap_inner().Вызов из функции run
+2022-01-13 12:04:56,580 DEBUG transport.py Принято сообщение с сервера: {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1642064696.485904, 'mess_text': 'fgfdsgsdfgdfg'}
+2022-01-13 12:04:56,580 DEBUG transport.py Разбор сообщения от сервера: {'action': 'message', 'from': 'test1', 'to': 'test2', 'time': 1642064696.485904, 'mess_text': 'fgfdsgsdfgdfg'}
+2022-01-13 12:04:56,581 DEBUG transport.py Получено сообщение от пользователя test1:fgfdsgsdfgdfg
+2022-01-13 12:04:56,591 DEBUG main_window.py Отправлено сообщение для test2: fgfdsgsdfgdfg
+2022-01-13 12:05:02,593 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=960, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58462), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1642064702.5936012, 'account_name': 'test1'}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции transport.transport_shutdown().Вызов из функции transport_shutdown
+2022-01-13 12:05:02,593 DEBUG transport.py Транспорт завершает работу.
+2022-01-13 12:05:03,423 DEBUG transport.py Потеряно соединение с сервером.
+2022-01-13 12:05:04,197 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=940, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58463), raddr=('127.0.0.1', 7777)>, {'action': 'exit', 'time': 1642064704.0193813, 'account_name': 'test2'}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции transport.transport_shutdown().Вызов из функции transport_shutdown
+2022-01-13 12:05:04,197 DEBUG transport.py Транспорт завершает работу.
+2022-01-13 12:08:40,878 DEBUG client.py Была вызвана функция arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции arg_parser().Вызов из функции <module>
+2022-01-13 12:08:40,893 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-01-13 12:08:40,909 DEBUG client.py Была вызвана функция arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции arg_parser().Вызов из функции <module>
+2022-01-13 12:08:40,909 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-01-13 12:08:40,940 INFO transport.py Попытка подключения №1
+2022-01-13 12:08:40,940 DEBUG transport.py Установлено соединение с сервером
+2022-01-13 12:08:40,940 DEBUG transport.py Сформировано presence сообщение для пользователя test1
+2022-01-13 12:08:40,940 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58492), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1642064920.9405377, 'user': {'account_name': 'test1'}}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции connection_init
+2022-01-13 12:08:40,940 DEBUG client.py Была вызвана функция arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции arg_parser().Вызов из функции <module>
+2022-01-13 12:08:40,956 INFO transport.py Попытка подключения №1
+2022-01-13 12:08:40,956 DEBUG transport.py Установлено соединение с сервером
+2022-01-13 12:08:40,956 DEBUG transport.py Сформировано presence сообщение для пользователя test2
+2022-01-13 12:08:40,956 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=1008, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58493), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1642064920.9561656, 'user': {'account_name': 'test2'}}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции connection_init
+2022-01-13 12:08:40,956 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test3
+2022-01-13 12:08:41,049 INFO transport.py Попытка подключения №1
+2022-01-13 12:08:41,065 DEBUG transport.py Установлено соединение с сервером
+2022-01-13 12:08:41,065 DEBUG transport.py Сформировано presence сообщение для пользователя test3
+2022-01-13 12:08:41,065 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=996, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58494), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1642064921.0655336, 'user': {'account_name': 'test3'}}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции connection_init
+2022-01-13 12:08:41,456 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58492), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции connection_init
+2022-01-13 12:08:41,456 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-13 12:08:41,456 INFO transport.py Соединение с сервером успешно установлено.
+2022-01-13 12:08:41,456 DEBUG transport.py Запрос списка известных пользователей test1
+2022-01-13 12:08:41,471 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58492), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1642064921.4561596, 'account_name': 'test1'}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции user_list_update
+2022-01-13 12:08:41,487 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=1008, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58493), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции connection_init
+2022-01-13 12:08:41,487 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-13 12:08:41,487 INFO transport.py Соединение с сервером успешно установлено.
+2022-01-13 12:08:41,487 DEBUG transport.py Запрос списка известных пользователей test2
+2022-01-13 12:08:41,487 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=1008, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58493), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1642064921.48741, 'account_name': 'test2'}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции user_list_update
+2022-01-13 12:08:41,487 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58492), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции user_list_update
+2022-01-13 12:08:41,503 DEBUG transport.py Запрос контакт листа для пользователся Thread-1
+2022-01-13 12:08:41,503 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1642064921.5030391, 'user': 'test1'}
+2022-01-13 12:08:41,518 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58492), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1642064921.5030391, 'user': 'test1'}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции contacts_list_update
+2022-01-13 12:08:41,549 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=996, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58494), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции connection_init
+2022-01-13 12:08:41,549 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-13 12:08:41,549 INFO transport.py Соединение с сервером успешно установлено.
+2022-01-13 12:08:41,549 DEBUG transport.py Запрос списка известных пользователей test3
+2022-01-13 12:08:41,549 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=996, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58494), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1642064921.5499272, 'account_name': 'test3'}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции user_list_update
+2022-01-13 12:08:42,049 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=420, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58492), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции contacts_list_update
+2022-01-13 12:08:42,049 DEBUG transport.py Получен ответ {'response': 202, 'data_list': ['test2']}
+2022-01-13 12:08:42,065 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=1008, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58493), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции user_list_update
+2022-01-13 12:08:42,081 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=996, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58494), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции user_list_update
+2022-01-13 12:08:42,096 DEBUG transport.py Запрос контакт листа для пользователся Thread-1
+2022-01-13 12:08:42,112 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1642064922.1124103, 'user': 'test2'}
+2022-01-13 12:08:42,112 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=1008, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58493), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1642064922.1124103, 'user': 'test2'}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции contacts_list_update
+2022-01-13 12:08:42,112 DEBUG transport.py Запрос контакт листа для пользователся Thread-1
+2022-01-13 12:08:42,112 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1642064922.1124103, 'user': 'test3'}
+2022-01-13 12:08:42,112 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=996, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58494), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1642064922.1124103, 'user': 'test3'}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции contacts_list_update
+2022-01-13 12:08:42,096 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2022-01-13 12:08:42,596 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=1008, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58493), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции contacts_list_update
+2022-01-13 12:08:42,596 DEBUG transport.py Получен ответ {'response': 202, 'data_list': ['test1']}
+2022-01-13 12:08:42,612 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=996, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58494), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции contacts_list_update
+2022-01-13 12:08:42,612 DEBUG transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-01-13 12:08:42,612 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2022-01-13 12:08:42,628 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2022-01-13 12:12:59,412 CRITICAL transport.py Потеряно соединение с сервером.
+2022-01-13 12:12:59,412 CRITICAL transport.py Потеряно соединение с сервером.
+2022-01-13 12:13:00,036 CRITICAL transport.py Потеряно соединение с сервером.
+2022-01-13 12:13:07,325 DEBUG transport.py Транспорт завершает работу.
+2022-01-13 12:13:07,871 DEBUG transport.py Транспорт завершает работу.
+2022-01-13 12:13:09,724 DEBUG transport.py Транспорт завершает работу.
+2022-01-13 12:13:22,551 DEBUG client.py Была вызвана функция arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции arg_parser().Вызов из функции <module>
+2022-01-13 12:13:22,566 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-01-13 12:13:22,582 DEBUG client.py Была вызвана функция arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции arg_parser().Вызов из функции <module>
+2022-01-13 12:13:22,598 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-01-13 12:13:22,613 DEBUG client.py Была вызвана функция arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции arg_parser().Вызов из функции <module>
+2022-01-13 12:13:22,613 INFO transport.py Попытка подключения №1
+2022-01-13 12:13:22,613 DEBUG transport.py Установлено соединение с сервером
+2022-01-13 12:13:22,613 DEBUG transport.py Сформировано presence сообщение для пользователя test2
+2022-01-13 12:13:22,613 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=980, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58545), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1642065202.613733, 'user': {'account_name': 'test2'}}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции connection_init
+2022-01-13 12:13:22,629 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test3
+2022-01-13 12:13:22,629 INFO transport.py Попытка подключения №1
+2022-01-13 12:13:22,629 DEBUG transport.py Установлено соединение с сервером
+2022-01-13 12:13:22,629 DEBUG transport.py Сформировано presence сообщение для пользователя test1
+2022-01-13 12:13:22,629 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=692, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58546), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1642065202.6293569, 'user': {'account_name': 'test1'}}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции connection_init
+2022-01-13 12:13:22,660 INFO transport.py Попытка подключения №1
+2022-01-13 12:13:22,660 DEBUG transport.py Установлено соединение с сервером
+2022-01-13 12:13:22,660 DEBUG transport.py Сформировано presence сообщение для пользователя test3
+2022-01-13 12:13:22,660 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=904, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58547), raddr=('127.0.0.1', 7777)>, {'action': 'presence', 'time': 1642065202.6606054, 'user': {'account_name': 'test3'}}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции connection_init
+2022-01-13 12:13:23,035 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=980, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58545), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции connection_init
+2022-01-13 12:13:23,035 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-13 12:13:23,035 INFO transport.py Соединение с сервером успешно установлено.
+2022-01-13 12:13:23,035 DEBUG transport.py Запрос списка известных пользователей test2
+2022-01-13 12:13:23,051 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=980, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58545), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1642065203.0512328, 'account_name': 'test2'}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции user_list_update
+2022-01-13 12:13:23,051 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=980, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58545), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции user_list_update
+2022-01-13 12:13:23,066 DEBUG transport.py Запрос контакт листа для пользователся Thread-1
+2022-01-13 12:13:23,066 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1642065203.066858, 'user': 'test2'}
+2022-01-13 12:13:23,066 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=980, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58545), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1642065203.066858, 'user': 'test2'}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции contacts_list_update
+2022-01-13 12:13:23,082 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=692, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58546), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции connection_init
+2022-01-13 12:13:23,082 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-13 12:13:23,082 INFO transport.py Соединение с сервером успешно установлено.
+2022-01-13 12:13:23,082 DEBUG transport.py Запрос списка известных пользователей test1
+2022-01-13 12:13:23,082 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=692, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58546), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1642065203.0824926, 'account_name': 'test1'}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции user_list_update
+2022-01-13 12:13:23,098 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=980, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58545), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции contacts_list_update
+2022-01-13 12:13:23,098 DEBUG transport.py Получен ответ {'response': 202, 'data_list': ['test1']}
+2022-01-13 12:13:23,129 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=904, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58547), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции connection_init
+2022-01-13 12:13:23,129 DEBUG transport.py Разбор сообщения от сервера: {'response': 200}
+2022-01-13 12:13:23,129 INFO transport.py Соединение с сервером успешно установлено.
+2022-01-13 12:13:23,129 DEBUG transport.py Запрос списка известных пользователей test3
+2022-01-13 12:13:23,129 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=904, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58547), raddr=('127.0.0.1', 7777)>, {'action': 'get_users', 'time': 1642065203.1293843, 'account_name': 'test3'}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции user_list_update
+2022-01-13 12:13:23,144 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2022-01-13 12:13:23,644 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=692, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58546), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции user_list_update
+2022-01-13 12:13:23,644 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=904, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58547), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции user_list_update
+2022-01-13 12:13:23,660 DEBUG transport.py Запрос контакт листа для пользователся Thread-1
+2022-01-13 12:13:23,660 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1642065203.6606228, 'user': 'test1'}
+2022-01-13 12:13:23,676 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=692, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58546), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1642065203.6606228, 'user': 'test1'}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции contacts_list_update
+2022-01-13 12:13:23,676 DEBUG transport.py Запрос контакт листа для пользователся Thread-1
+2022-01-13 12:13:23,676 DEBUG transport.py Сформирован запрос {'action': 'get_contacts', 'time': 1642065203.6762364, 'user': 'test3'}
+2022-01-13 12:13:23,676 DEBUG transport.py Была вызвана функция send_message c параметрами (<socket.socket fd=904, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58547), raddr=('127.0.0.1', 7777)>, {'action': 'get_contacts', 'time': 1642065203.6762364, 'user': 'test3'}), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции contacts_list_update
+2022-01-13 12:13:24,144 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=692, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58546), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции contacts_list_update
+2022-01-13 12:13:24,144 DEBUG transport.py Получен ответ {'response': 202, 'data_list': ['test2']}
+2022-01-13 12:13:24,160 DEBUG transport.py Была вызвана функция get_message c параметрами (<socket.socket fd=904, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('127.0.0.1', 58547), raddr=('127.0.0.1', 7777)>,), {}. Вызов из модуля lesson_5.common.utils.Вызов из функции client_name).Вызов из функции contacts_list_update
+2022-01-13 12:13:24,160 DEBUG transport.py Получен ответ {'response': 202, 'data_list': []}
+2022-01-13 12:13:24,160 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2022-01-13 12:13:24,176 DEBUG transport.py Запущен процесс - приёмник собщений с сервера.
+2022-01-13 12:13:34,327 CRITICAL transport.py Потеряно соединение с сервером.
+2022-01-13 12:13:34,327 CRITICAL transport.py Потеряно соединение с сервером.
+2022-01-13 12:13:34,842 CRITICAL transport.py Потеряно соединение с сервером.
+2022-01-13 12:13:37,929 DEBUG transport.py Транспорт завершает работу.
+2022-01-13 12:13:39,014 DEBUG transport.py Транспорт завершает работу.
+2022-01-13 12:13:39,668 DEBUG transport.py Транспорт завершает работу.
+2022-01-13 12:14:41,454 DEBUG client.py Была вызвана функция arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции arg_parser().Вызов из функции <module>
+2022-01-13 12:14:41,469 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test3
+2022-01-13 12:14:41,469 DEBUG client.py Была вызвана функция arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции arg_parser().Вызов из функции <module>
+2022-01-13 12:14:41,485 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-01-13 12:14:41,501 DEBUG client.py Была вызвана функция arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции arg_parser().Вызов из функции <module>
+2022-01-13 12:14:41,501 INFO transport.py Попытка подключения №1
+2022-01-13 12:14:41,501 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-01-13 12:14:41,532 INFO transport.py Попытка подключения №1
+2022-01-13 12:14:41,548 INFO transport.py Попытка подключения №1
+2022-01-13 12:14:44,532 INFO transport.py Попытка подключения №2
+2022-01-13 12:14:44,579 INFO transport.py Попытка подключения №2
+2022-01-13 12:14:44,579 INFO transport.py Попытка подключения №2
+2022-01-13 12:14:47,566 INFO transport.py Попытка подключения №3
+2022-01-13 12:14:47,613 INFO transport.py Попытка подключения №3
+2022-01-13 12:14:47,628 INFO transport.py Попытка подключения №3
+2022-01-13 12:14:50,628 INFO transport.py Попытка подключения №4
+2022-01-13 12:14:50,644 INFO transport.py Попытка подключения №4
+2022-01-13 12:14:50,706 INFO transport.py Попытка подключения №4
+2022-01-13 12:14:53,706 INFO transport.py Попытка подключения №5
+2022-01-13 12:14:53,738 INFO transport.py Попытка подключения №5
+2022-01-13 12:14:53,769 INFO transport.py Попытка подключения №5
+2022-01-13 12:14:56,784 CRITICAL transport.py Не удалось установить соединение с сервером
+2022-01-13 12:14:56,800 CRITICAL transport.py Не удалось установить соединение с сервером
+2022-01-13 12:15:51,488 DEBUG client.py Была вызвана функция arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции arg_parser().Вызов из функции <module>
+2022-01-13 12:15:51,503 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test2
+2022-01-13 12:15:51,519 DEBUG client.py Была вызвана функция arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции arg_parser().Вызов из функции <module>
+2022-01-13 12:15:51,535 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test3
+2022-01-13 12:15:51,535 DEBUG client.py Была вызвана функция arg_parser c параметрами (), {}. Вызов из модуля __main__.Вызов из функции arg_parser().Вызов из функции <module>
+2022-01-13 12:15:51,550 INFO transport.py Попытка подключения №1
+2022-01-13 12:15:51,550 INFO client.py Запущен клиент с парамертами: адрес сервера: 127.0.0.1 , порт: 7777, имя пользователя: test1
+2022-01-13 12:15:51,566 INFO transport.py Попытка подключения №1
+2022-01-13 12:15:51,582 INFO transport.py Попытка подключения №1
+2022-01-13 12:15:54,613 INFO transport.py Попытка подключения №2
+2022-01-13 12:15:54,613 INFO transport.py Попытка подключения №2
+2022-01-13 12:15:54,644 INFO transport.py Попытка подключения №2
+2022-01-13 12:15:57,691 INFO transport.py Попытка подключения №3
+2022-01-13 12:15:57,691 INFO transport.py Попытка подключения №3
+2022-01-13 12:15:57,691 INFO transport.py Попытка подключения №3
+2022-01-13 12:16:00,722 INFO transport.py Попытка подключения №4
+2022-01-13 12:16:00,722 INFO transport.py Попытка подключения №4
+2022-01-13 12:16:00,738 INFO transport.py Попытка подключения №4
+2022-01-13 12:16:03,769 INFO transport.py Попытка подключения №5
+2022-01-13 12:16:03,800 INFO transport.py Попытка подключения №5
+2022-01-13 12:16:03,816 INFO transport.py Попытка подключения №5
+2022-01-13 12:16:06,838 CRITICAL transport.py Не удалось установить соединение с сервером
+2022-01-13 12:16:06,869 CRITICAL transport.py Не удалось установить соединение с сервером
+2022-01-13 12:16:06,869 CRITICAL transport.py Не удалось установить соединение с сервером
